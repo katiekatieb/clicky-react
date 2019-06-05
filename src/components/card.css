@@ -1,0 +1,13 @@
+.card {
+  border-radius: 2px;
+  height: 13em;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+img{
+  height: 10em;
+  width: auto !important;
+  margin: 0 auto;
+}
