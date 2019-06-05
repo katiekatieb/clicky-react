@@ -1,4 +1,4 @@
-# clicky came
+# clicky game
 
 
 ## Contributors
