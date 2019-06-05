@@ -20,8 +20,8 @@ class App extends Component {
     this.state.images.find((x, i) => {
       if (x.id === id) {
         console.log(images[i])
-        if(images[i].count === 0){
-          images[i].count = images[i].count + 1
+        if(!images[i].clicked){
+          images[i].clicked = true
           this.setState({score : this.state.score + 1})
           this.state.images.sort(() => Math.random() - 0.5)
           return true 
@@ -34,7 +34,7 @@ class App extends Component {
 
   gameOver() {
     this.state.images.map(card => {
-      card.count = 0
+      card.clicked = false
     })
     alert('You lose.')
     this.setState({highscore: this.state.score > this.state.highscore ? this.state.score : this.state.highscore})

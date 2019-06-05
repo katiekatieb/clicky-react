@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 
 const Card = (props) => {
-  console.log(props)
+  // console.log(props)
   return (
     <div className="col-3 py-4">
       <div className="card" onClick={() => props.clicker(props.id)}>
